@@ -19,7 +19,7 @@ jobs:
         with:        
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PWD }}
-          
+
       - name: Docker build end Push
       - uses: docker/build-push-action@v2.10.0
         with:
@@ -28,5 +28,4 @@ jobs:
           push: true
           tags:
             evandronovais/rotten-potatoes:latest
-            evandronovais/rotten-potatoes:${{ github.run._number }}  
-      
+            evandronovais/rotten-potatoes:${{ github.run._number }}
