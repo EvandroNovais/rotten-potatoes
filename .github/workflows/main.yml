@@ -28,5 +28,5 @@ jobs:
           push: true
           tags: |
             evandronovais/rotten-potatoes:latest
-            evandronovais/rotten-potatoes:${{ github.run_number }}
+            evandronovais/rotten-potatoes:v1
             
